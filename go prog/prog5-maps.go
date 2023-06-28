@@ -5,14 +5,19 @@ func main(){
 	myMap["apple"]=1;
 	myMap["banana"]=2
 	myMap["orange"]=3
+
 	appleValue:=myMap["apple"]
 	bananaValue:=myMap["banana"]
+
 	fmt.Println("Value of apple:",appleValue)
 	fmt.Println("Value of banana:",bananaValue)
+
 	myMap["apple"]=5
 	fmt.Println("Updated value of apple",myMap["apple"])
+
 	delete(myMap,"orange")
 	fmt.Println("After deleting orange:",myMap)
+	
 	value, exists:=myMap["banana"]
 	if exists{
 		fmt.Println("Value of banana:",value)
